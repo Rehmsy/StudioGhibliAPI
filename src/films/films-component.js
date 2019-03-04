@@ -1,8 +1,8 @@
-export function makeFilmItem() {
+export function makeFilmItem(film) {
   const html = /*html*/`
-    <li class="film" title="In the latter part of World War II, a boy and his sister, orphaned when their mother is killed in the firebombing of Tokyo, are left to survive on their own in what remains of civilian life in Japan. The plot follows this boy and his sister as they do their best to survive in the Japanese countryside, battling hunger, prejudice, and pride in their own quiet, personal battle.">
+    <li class="film" title="${film.description}">
       <h1>
-        <a href="./film-detail.html?id=12cfb892-aac0-4c5b-94af-521852e46d6a">Grave of the Fireflies</a>
+        <a href="./film-detail.html?id=${film.id}">${film.title}</a>
       </h1>
     </li>
   `;
@@ -12,4 +12,11 @@ export function makeFilmItem() {
   return template.content;
 }
 
+const filmList = document.getElementById('film-list');
 
+export default function loadFilms(films) {
+  films.forEach(film => {
+    const dom = makeFilmItem(film);
+    filmList.appendChild(dom);
+  });
+}
