@@ -1,10 +1,39 @@
 li {
   list-style: none;
-  font-size: 12px;
+  font-size: .7em;
+  line-height: 2.2em;
+  font-family: 'News Cycle', sans-serif;
+  margin: 18px;
 }
 
-a {
+#film-list a {
   text-decoration: none;
+  border-radius: 5px;
+  padding: 2px;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+#film-list a:link {
+  color: white;
+}
+#film-list a:visited {
+  color: yellow;;
+}
+
+#film-list a:hover { 
+  // background-color: black;
+ //color: black;
+  background-color: red;
+  text-shadow: 1px 1px black;
+}
+
+#film-list {
+  background-color: black;
+  //background-image: url("../assets/totoro.png");  
+  padding: 16px;
+  width: 100%;
 }
 
 

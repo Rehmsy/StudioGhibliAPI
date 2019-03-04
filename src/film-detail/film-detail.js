@@ -1,4 +1,7 @@
 import loadFilmDetail from './film-detail-component.js';
+import loadHeader from '../header/header-component.js';
+
+loadHeader();
 
 const searchParams = new URLSearchParams(window.location.search);
 const id = searchParams.get('id');

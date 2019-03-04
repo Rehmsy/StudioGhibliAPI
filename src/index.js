@@ -1,4 +1,7 @@
 import loadFilms from './films/films-component.js';
+import loadHeader from './header/header-component.js';
+
+loadHeader();
 
 const URL = 'https://ghibliapi.herokuapp.com/films';
 

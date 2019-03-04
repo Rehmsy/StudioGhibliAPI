@@ -1,8 +1,26 @@
+body {
+  font-family: 'News Cycle', sans-serif;
+}
+
 li {
   list-style: none;
-  font-size: 12px;
 }
 
 a {
   text-decoration: none;
+}
+
+dt {
+  background-color: black;
+  color: white;
+  padding: 2px;
+  font-size: 1.3em;
+  width: 200px;
+}
+
+dd {
+  background-color: lightyellow;
+  font-size: 1.1em;
+  margin-bottom: 16px;
+  width: 70%;
 }
