@@ -21,6 +21,9 @@ dt {
 dd {
   background-color: lightyellow;
   font-size: 1.1em;
+  padding: 8px;
+  letter-spacing: 2px;
+  border-left: 2px solid black;
   margin-bottom: 16px;
   width: 70%;
 }

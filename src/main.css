@@ -32,8 +32,10 @@ li {
 #film-list {
   background-color: black;
   //background-image: url("../assets/totoro.png");  
+  letter-spacing: 2px;
   padding: 16px;
   width: 100%;
+  margin-bottom: 0px;
 }
 
 
