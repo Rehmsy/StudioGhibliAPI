@@ -1,10 +1,12 @@
 export function makeFilmItem(film) {
   const html = /*html*/`
+  
     <li class="film" title="${film.description}">
       <h1>
         <a href="./film-detail-view.html?id=${film.id}">${film.title}</a>
       </h1>
     </li>
+   
   `;
 
   const template = document.createElement('template');
