@@ -28,12 +28,12 @@ header {
   color: #454d6d;
   letter-spacing:3px;
 }
-#header-container a:hover { 
-  color: white;
-  background-color:  #454d6d;
-}
 #header-container a:visited {
   color: palevioletred;
+}
+#header-container a:hover { 
+  background-color:  #454d6d;
+  color: rgb(221, 162, 176);
 }
 
 #header-container h1 {
